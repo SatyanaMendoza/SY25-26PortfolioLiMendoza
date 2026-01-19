@@ -1,0 +1,96 @@
+.topbar {
+    background: #59c3f0;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+    height: 80px;          
+    min-height: 80px;
+    justify-content: center;
+    gap: 10px;   
+    text-align: center;
+    flex-shrink: 0;
+    flex-direction: row;
+}
+    
+.topbar > * {
+    flex-shrink: 0;
+}
+    
+.topbar h1 {
+    font-size: 2rem;
+    color: #1277d8;
+    text-align: center;
+    margin: 0;
+    flex-shrink: 1;
+}
+
+
+.menu {
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+    margin-left: auto;
+}
+    
+    
+.dropdown {
+    background: #2fa4dd;
+    position: absolute;
+    top: 73px;
+    right: 0;
+    width: 220px;
+    display: none;
+    z-index: 1000;         
+    flex-direction: column;    
+}
+    
+    
+.dropdown a {
+    display: block;
+    color: white;
+    font-weight: 900;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #59c3f0;
+}
+    
+.dropdown.active {
+    display: flex;
+}
+    
+.dropdown .close {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+    
+.hidden { 
+    display: none; 
+}
+
+.links {
+    background: #1277d8;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+    
+    
+.links a {
+    margin: 10px;
+    color: #59c3f0;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-weight: 900;
+    flex-shrink: 0;
+}
