@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eaf4ff;
+    margin: 0;
+    padding: 20px;
+}
+
+.page-title {
+    text-align: center;
+    color: #1f4f82;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.controls {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #1f4f82;
+}
+
+.controls select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1.5px solid #b5d4f1;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #1f4f82;
+}
+
+#total {
+    font-weight: bold;
+    color: #1f4f82;
+    margin-bottom: 10px;
+}
+
+#message {
+    color: #e63946;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 90, 160, 0.05);
+    margin-bottom: 20px;
+}
+
+.table-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f4f82;
+    margin-bottom: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead {
+    background: #3a8dde;
+    color: white;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dbe9f7;
+}
+
+tbody tr:nth-child(even) {
+    background: #f5faff;
+}
+
+td {
+    padding: 10px 12px;
+    color: #1f4f82;
+}
+
+tbody tr:hover {
+    background: #e3f1ff;
+}
+
+.back-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #3a8dde;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.back-link a:hover {
+    color: #1f4f82;
+}

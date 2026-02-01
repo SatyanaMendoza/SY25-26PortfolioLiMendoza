@@ -8,54 +8,72 @@
     <meta name="author" content="Satyana Margaret S. Mendoza">
     <title>SY25-26 Portfolio</title>
     <link rel="stylesheet" href="./public/index.css">
-    <link rel="icon" href="./asset/portfolio logo.webp" sizes="32x32" type="image/x-icon">
+    <link rel="icon" href="./asset/portfolio-logo.png" sizes="32x32" type="image/x-icon">
     <script src="./public/index.js" defer></script>
 
 </head>
 <body>
 
     <header class="topbar">
-        <img src="./asset/portfolio logo.webp" class="logo">
-        <h1>Portfolio of My Work in the SY25-26</h1>
+        <div class="topbar-left">
+            <img src="./asset/portfolio-logo.png" class="logo" alt="Portfolio Logo">
+            <h1>SY25-26 Portfolio</h1>
+        </div>
 
-        <div class="menu" onclick="toggleMenu1()">First Quarter</div>
+        <div class="topbar-right">
+            <div class="menu-wrapper">
+                <div class="menu" onclick="toggleMenu(1)">First Quarter</div>
+                <nav id="dropdown1" class="dropdown">
+                    <a href="./public/Q1/html/1Q_1GLiMendoza.html">First Graded</a>
+                    <a href="./public/Q1/html/1Q_1NGLiMendoza.html">First Non-Graded</a>
+                    <a href="./public/Q1/html/1Q_2GLiMendoza.html">Second Graded</a>
+                    <a href="./public/Q1/html/1Q_3GLiMendoza.html">Third Graded</a>
+                </nav>
+            </div>
 
-        <nav id="dropdown1" class="dropdown1">
-            <a href="./public/Q1/1Q_1GLiMendoza.html">First Graded</a>
-            <a href="./public/Q1/1Q_1NGLiMendoza.html">First Non-Graded</a>
-            <a href="./public/Q1/1Q_2GLiMendoza.html">Second Graded</a>
-            <a href="./public/Q1/1Q_3GLiMendoza.html">Third Graded</a>
-        </nav>
+            <div class="menu-wrapper">
+                <div class="menu" onclick="toggleMenu(2)">Second Quarter</div>
+                <nav id="dropdown2" class="dropdown">
+                    <a href="./public/Q2/html/2Q_1GLiMendoza.html">First Graded</a>
+                    <a href="./public/Q2/html/2Q_1NGLiMendoza.html">First Non-Graded</a>
+                    <a href="./public/Q2/html/2Q_2GLiMendoza.html">Second Graded</a>
+                </nav>
+            </div>
 
-        <div class="menu" onclick="toggleMenu2()">Second Quarter</div>
+            <div class="menu-wrapper">
+                <div class="menu" onclick="toggleMenu(3)">Third Quarter</div>
+                <nav id="dropdown3" class="dropdown">
+                    <a href="./public/Q3/html/Q3_2GLiMendoza.html">Second Graded</a>
+                    <a href="./public/Q3/html/Q3_3GLiMendoza.html">Third Graded</a>
+                </nav>
+            </div>
 
-        <nav id="dropdown2" class="dropdown2">
-            <a href="./public/Q2/2Q_1GLiMendoza.html">First Graded</a>
-            <a href="./public/Q2/2Q_1NGLiMendoza.html">First Non-Graded</a>
-            <a href="./public/Q2/2Q_2GLiMendoza.html">Second Graded</a>
-        </nav>
-
-        <div class="menu" onclick="toggleMenu3()">Third Quarter</div>
-
-        <nav id="dropdown3" class="dropdown3">
-            <a href="./public/Q3/html/Q3_2GLiMendoza.html">Second Graded</a>
-        </nav>
-
-        <div class="project">
-            <a href="https://satyanamendoza.github.io/WDProjLithiumMendozaPadilla/"> Access to My Project</a> 
+            <div class="menu-wrapper">
+                <div class="menu" onclick="toggleMenu(4)">Fourth Quarter</div>
+                <nav id="dropdown4" class="dropdown">
+                    <a href="#">Placeholder 1</a>
+                    <a href="#">Placeholder 2</a>
+                </nav>
+            </div>
         </div>
 
     </header>
 
-    <section>
-        <hr/>
-        <article>
-            <p></p>
-        </article>
-    </section>
+
+    <main>
+        <section class="intro">
+            <p>
+                Welcome to my portfolio for the SY25-26 school year. <br><br>
+                Click the quarter menus above to explore my graded and non-graded works.
+            </p>
+        </section>
+    </main>
+
+
     <footer>
         <hr/>
-        <p>Copyright <span>&copy; SM Mendoza</span></p>
+        <p>&copy; 2025-2026 SM SMendoza</p>
     </footer>
+
 </body>
 </html>

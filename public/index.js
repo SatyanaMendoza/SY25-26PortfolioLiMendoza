@@ -1,14 +1,9 @@
-function toggleMenu1() {
-    const menu = document.getElementById('dropdown1');
-    menu.classList.toggle('active');
-}
+function toggleMenu(n) {
+    const menu = document.getElementById('dropdown' + n);
 
-function toggleMenu2() {
-    const menu = document.getElementById('dropdown2');
-    menu.classList.toggle('active');
-}
+    document.querySelectorAll('.dropdown').forEach(d => {
+        if (d !== menu) d.classList.remove('active');
+    });
 
-function toggleMenu3() {
-    const menu = document.getElementById('dropdown3');
     menu.classList.toggle('active');
 }
