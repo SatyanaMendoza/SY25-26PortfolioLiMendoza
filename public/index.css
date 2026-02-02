@@ -5,13 +5,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #eaf4ff;
+    background: #accbec;
     color: #1f4f82;
 }
 
 .topbar {
     width: 100%;
-    background: #59c3f0;
+    background: #59a7f0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +63,7 @@ p {
     cursor: pointer;
     font-weight: bold;
     font-size: 1.1rem;
-    transition: background 0.2s ease, transform 0.2s ease;
+    transition: background 0.4s ease, transform 0.4s ease;
     text-align: center;
     position: relative;
 }
@@ -79,12 +79,12 @@ p {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #2fa4dd;
+    background: #59a7f0;
     border-radius: 6px;
     flex-direction: column;
     min-width: 180px;
     z-index: 100;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
     padding: 0 0;
 }
 
@@ -94,20 +94,20 @@ p {
 }
 
 .dropdown a {
-    color: white;
+    color: rgb(210, 230, 248);
     text-decoration: none;
     padding: 8px 12px;
-    border-bottom: 1px solid #59c3f0;
+    border-bottom: 1px solid #1b64a8;
     display: block;
 }
 
 .dropdown a:hover {
-    background: #1277d8;
+    background: #2c84d6;
 }
 
 footer {
     text-align: center;
-    padding: 15px 0;
-    background: #59c3f0;
+    padding: 5px 0px;
+    background: #59a7f0;
     color: #1f4f82;
 }
