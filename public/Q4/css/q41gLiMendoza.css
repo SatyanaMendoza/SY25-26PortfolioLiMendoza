@@ -14,6 +14,18 @@ form {
     box-shadow: 0 8px 20px rgba(0, 90, 160, 0.1);
 }
 
+.rating-score input[type="radio"] {
+    display: none;
+}
+
+.rating-score.active { 
+    background: #ff4d4d;
+    border-color: #b22222;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.6);
+}
+
 label {
     font-weight: 600;
     color: #1f4f82;
