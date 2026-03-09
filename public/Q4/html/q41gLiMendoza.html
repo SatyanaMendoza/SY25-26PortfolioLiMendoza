@@ -1,130 +1,103 @@
 <!DOCTYPE html> 
 <html lang="en"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <meta name="description" content="Quarter 4 First Graded Exercise"> 
-    <meta name="keywords" content="Graded, Exercise, First, Fourth Quarter, First Graded"> 
-    <meta name="author" content="Satyana Margaret S. Mendoza"> 
-    <title>Q4_1GLiMendoza</title> 
-    <link rel="stylesheet" href="../css/q41gLiMendoza.css"> 
-    <link rel="icon" href="../../../asset/portfolio-logo.png" sizes="32x32" type="image/png"> 
-    <script src="../js/q41gLiMendoza.js" defer></script> 
-</head> 
-<body>
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Quarter 4 First Graded Exercise"> 
+        <meta name="keywords" content="Graded, Exercise, First, Fourth Quarter, First Graded"> 
+        <meta name="author" content="Satyana Margaret S. Mendoza"> 
+        <title>Q4_1GLiMendoza</title> 
+        <link rel="stylesheet" href="../css/q41gLiMendoza.css"> 
+        <link rel="icon" href="../../../asset/portfolio-logo.png" sizes="32x32" type="image/png"> 
+        <script src="../js/q41gLiMendoza.js" defer></script> 
+    </head> 
+    <body>
 
-    <div class="homelink">
-        <a href="../../../index.html">⬅ Back to Home</a>
-    </div>
+        <div class="homelink">
+            <a href="../../../index.html">⬅ Back to Home</a>
+        </div>
 
-    <form method="post" onsubmit="return saveSignup(event)">
+        <form id="movieForm" onsubmit="saveMovie(event)">
 
-        <h1>
-            Add a Movie
-        </h1>
+            <h1>Add a Movie</h1>
 
-        <label> 
-            Title: 
-            <input type="text" name="movie-title" required onblur="checkEmpty(event)"> 
-        </label> 
-        <br><br> 
+            <label>Title:</label>
+            <input type="text" id="movie-title" required>
 
-        <label> 
-            Year: 
-            <input type="number" name="movie-year" required onblur="checkEmpty(event)"> 
-        </label> 
-        <br><br>
+            <label>Year:</label>
+            <input type="number" id="movie-year" required> 
 
-        <label> 
-            Genre: 
-            <select name="movie-genre" required onblur="checkEmpty(event)"> 
+            <label>Genre:</label>  
+            <select id="movie-genre" required> 
                 <option value="">Select Genre</option> 
-                <option value="genre-action">Action</option> 
-                <option value="genre-actcom">Action-Comedy</option>
-                <option value="genre-actdrama">Action-Drama</option>
-                <option value="genre-acthorror">Action-Horror</option>
-                <option value="genre-actthriller">Action-Thriller</option>
-                <option value="genre-adventure">Adventure</option>
-                <option value="genre-animated">Animation</option>
-                <option value="genre-biography">Biography</option>
-                <option value="genre-chickflick">Chick Flick</option>
-                <option value="genre-comedy">Comedy</option>
-                <option value="genre-coa">Coming-of-Age</option>
-                <option value="genre-contemporary">Contemporary</option>
-                <option value="genre-crime">Crime</option>
-                <option value="genre-crimedrama">Crime-Drama</option>
-                <option value="genre-crimedrama">Crime-Thriller</option>
-                <option value="genre-darkcom">Dark Comedy</option>
-                <option value="genre-disaster">Disaster</option>
-                <option value="genre-drama">Drama</option>
-                <option value="genre-docudrama">Documentary-Drama</option>
-                <option value="genre-dystopian">Dystopian</option>
-                <option value="genre-experimental">Experimental</option>
-                <option value="genre-family">Family</option>
-                <option value="genre-fantasy">Fantasy</option>
-                <option value="genre-historical">Historical</option>
-                <option value="genre-horror">Horror</option>
-                <option value="genre-horrorcom">Horror-Comedy</option>
-                <option value="genre-melodrama">Melodrama</option>
-                <option value="genre-military">Military</option>
-                <option value="genre-mockumentary">Mockumentary</option>
-                <option value="genre-musical">Musical</option>
-                <option value="genre-mystery">Mystery</option>
-                <option value="genre-noir">Noir</option>
-                <option value="genre-parody">Parody</option>
-                <option value="genre-psychthriller">Psychological-Thriller</option>
-                <option value="genre-romcom">Romantic-Comedy</option>
-                <option value="genre-romdrama">Romantic-Drama</option>
-                <option value="genre-romthriller">Romantic-Thriller</option>
-                <option value="genre-scifi">Science-Fiction</option>
-                <option value="genre-silentfilm">Silent-Film</option>
-                <option value="genre-sitcom">Situational-Comedy</option>
-                <option value="genre-sports">Sports</option>
-                <option value="genre-superhero">Superhero</option>
-                <option value="genre-suspense">Suspense</option>
-                <option value="genre-thriller">Thriller</option>
-                <option value="genre-timetravel">Time-Travel</option>
-                <option value="genre-utopia">Utopia</option>
-                <option value="genre-war">War</option>
-                <option value="genre-western">Western</option>
+                <option value="Action">Action</option> 
+                <option value="Action-Crime">Action-Crime</option>
+                <option value="Action-Comedy">Action-Comedy</option>
+                <option value="Action-Drama">Action-Drama</option>
+                <option value="Action-Horror">Action-Horror</option>
+                <option value="Action-Thriller">Action-Thriller</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Animation">Animation</option>
+                <option value="Biography">Biography</option>
+                <option value="Chick Flick">Chick Flick</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Coming-of-Age">Coming-of-Age</option>
+                <option value="Contemporary">Contemporary</option>
+                <option value="Crime">Crime</option>
+                <option value="Crime-Drama">Crime-Drama</option>
+                <option value="Crime-Thriller">Crime-Thriller</option>
+                <option value="Dark Comedy">Dark Comedy</option>
+                <option value="Disaster">Disaster</option>
+                <option value="Drama">Drama</option>
+                <option value="Documentary-Drama">Documentary-Drama</option>
+                <option value="Dystopian">Dystopian</option>
+                <option value="Experimental">Experimental</option>
+                <option value="Family">Family</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Historical">Historical</option>
+                <option value="Horror">Horror</option>
+                <option value="Horror-Comedy">Horror-Comedy</option>
+                <option value="Melodrama">Melodrama</option>
+                <option value="Military">Military</option>
+                <option value="Mockumentary">Mockumentary</option>
+                <option value="Musical">Musical</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Noir">Noir</option>
+                <option value="Parody">Parody</option>
+                <option value="Psychological-Thriller">Psychological-Thriller</option>
+                <option value="Romantic-Comedy">Romantic-Comedy</option>
+                <option value="Romantic-Drama">Romantic-Drama</option>
+                <option value="Romantic-Thriller">Romantic-Thriller</option>
+                <option value="Science-Fiction">Science-Fiction</option>
+                <option value="Silent-Film">Silent-Film</option>
+                <option value="Situational-Comedy">Situational-Comedy</option>
+                <option value="Sports">Sports</option>
+                <option value="Superhero">Superhero</option>
+                <option value="Suspense">Suspense</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Time-Travel">Time-Travel</option>
+                <option value="Utopia">Utopia</option>
+                <option value="War">War</option>
+                <option value="Western">Western</option>
             </select> 
-        </label> 
-        <br><br> 
 
-        <section class="rating-score">
-            <label>
-                Rating:
-            </label>
-            <label>
-                <input type="radio" class="star" name="rating" value="one" onclick="toggleRating(this)"> 
-                ★
-            </label>
-            <label>
-                <input type="radio" class="star" name="rating" value="two" onclick="toggleRating(this)"> 
-                ★
-            </label>
-            <label>
-                <input type="radio" class="star" name="rating" value="three" onclick="toggleRating(this)"> 
-                ★
-            </label>
-            <label>
-                <input type="radio" class="star" name="rating" value="four" onclick="toggleRating(this)"> 
-                ★
-            </label>
-            <label>
-                <input type="radio" class="star" name="rating" value="five" onclick="toggleRating(this)"> 
-                ★
-            </label>
-        </section>
+            <label>Rating:</label>
+            <div class="star-container">
+                <span class="star" data-value="1" onclick="setRating(1)">★</span>
+                <span class="star" data-value="2" onclick="setRating(2)">★</span>
+                <span class="star" data-value="3" onclick="setRating(3)">★</span>
+                <span class="star" data-value="4" onclick="setRating(4)">★</span>
+                <span class="star" data-value="5" onclick="setRating(5)">★</span>
+            </div>
 
-        <input type="submit" value="Add Movie">
+            <button type="submit" id="addBtn">Add Movie</button>
 
-    </form>
+        </form>
 
-    <div class="homelink">
-        
-    </div>
-        
-
-</body>
+        <div id="movieListContainer">
+            <h2>Movie List</h2>
+            <div id="movieDisplay"></div>
+        </div>
+            
+    </body>
 </html>
