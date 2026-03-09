@@ -14,6 +14,10 @@ form {
     box-shadow: 0 8px 20px rgba(0, 90, 160, 0.1);
 }
 
+.rating-score {
+    position: relative;
+}
+
 .rating-score input[type="radio"] {
     display: none;
 }
