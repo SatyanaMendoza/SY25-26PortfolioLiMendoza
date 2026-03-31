@@ -120,8 +120,10 @@ a. Could you summarize the differences between the CSS position values (static, 
   - fixed: it is fixed on the SCREEN and stays on the screen even if you scroll.
 
 b. How does absolute positioning depend on its parent element?
-  - It positions an element with absolute positioning realtive to its parent element.
+  - It positions an element with absolute positioning relative to its parent element.
 
 c. How do you differentiate sticky from fixed (you can research on sticky)?
+  - Fixed stays in one spot on the screen no matter what, while sticky moves with the page until it hits a specific point and then "sticks" to the top of its box.
 
 d. If you were designing a webpage for a school event, how might you use positioning to highlight important information? Please give concrete examples.
+  - For a school event page, I would use static for the main body text so it flows naturally on the page, but I’d use relative to slightly nudge a "New!" icon away from its original position next to a specific activity. I could then use absolute to pin a "Sold Out" badge to the exact corner of an event's image, and I would use fixed to keep the "Buy Tickets" button stuck to the screen so users can always see it while they scroll.
